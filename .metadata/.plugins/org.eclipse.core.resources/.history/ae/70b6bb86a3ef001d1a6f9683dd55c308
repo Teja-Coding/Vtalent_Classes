@@ -1,0 +1,13 @@
+package com.SpringCore;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		BillCollector bc=new BillCollector();
+		
+		UPI u=new UPI();
+		bc.Payment(1500.00);
+	}
+
+}

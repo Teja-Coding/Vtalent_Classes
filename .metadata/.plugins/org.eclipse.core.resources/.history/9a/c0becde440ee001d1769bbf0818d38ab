@@ -1,0 +1,25 @@
+package Com.Service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import Com.entity.UserClass;
+
+public class UserDetails {
+	public static void main(String[] args) {
+		
+	UserClass u1=new UserClass("manikanta", "vanapalli","123M4356457J",234323545353l , "hyd", "btech");
+	UserClass u2=new UserClass("mani", "vanapalli","123E4356457J",2343235665353l , "tanuku", "btech");
+	UserClass u3=new UserClass("teja", "vanapalli","123J4356457J",2343245445353l , "penumantra", "btech");
+	UserClass u4=new UserClass("sri", "vanapalli","123L4356457J",23436565545353l , "vijayawada", "btech");
+	
+	List<UserClass> l=new ArrayList<>();
+	l.add(u1);
+	l.add(u2);
+	l.add(u3);
+	l.add(u4);
+	
+	System.out.println(l);
+	}
+	
+}

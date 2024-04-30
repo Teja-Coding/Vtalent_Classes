@@ -1,0 +1,22 @@
+package com.SpringCore;
+
+import java.lang.reflect.Field;
+
+public class Test {
+
+	public static void main(String[] args) throws Exception {
+		
+		UPI u =new UPI();
+		
+		Class<?> clz = Class.forName("com.SpringCore.BillCollector");
+		
+		Object obj=clz.newInstance();
+		
+		BillCollector bc=(BillCollector)obj;
+		bc.setPayment(1500.00);
+		Field f=clz.getDeclaredField("p");
+		f.setAccessible(true);
+		f.set(obj, u);
+	}
+
+}

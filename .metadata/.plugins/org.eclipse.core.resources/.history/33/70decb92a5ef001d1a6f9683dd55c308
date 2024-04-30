@@ -1,0 +1,14 @@
+package com.SpringCore;
+
+public class Test {
+
+	public static void main(String[] args) throws Exception {
+		
+		Class<?> clz = Class.forName("com.SpringCore.BillCollector");
+		
+		Object obj=clz.newInstance();
+		
+		BillCollector bc=(BillCollector)obj;
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="bike" class="com.org.Traveller.BikeClass"></bean>
+	<bean id="car" class="com.org.Traveller.CarClass"></bean>
+	<bean id="cycle" class="com.org.Traveller.CycleClass"></bean>
+	<bean id="t" class="com.org.Traveller.TravelerClass"><property name="Vechicle" ref="car"></property></bean>
+	
+</beans>

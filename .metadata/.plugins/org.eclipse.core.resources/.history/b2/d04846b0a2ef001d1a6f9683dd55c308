@@ -1,0 +1,7 @@
+package com.SpringCore;
+
+public class BillCollector {
+	
+	public Payment p;
+
+}

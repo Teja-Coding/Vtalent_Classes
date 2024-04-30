@@ -1,0 +1,28 @@
+package com.org.Comparable;
+
+public class StudentClass implements Comparable<StudentClass> 	 {
+	int id;
+	String name;
+	int marks;
+	public StudentClass(int id, String name, int marks) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.marks = marks;
+	}
+	@Override
+	public String toString() {
+		return "StudentClass [id=" + id + ", name=" + name + ", marks=" + marks + "]";
+	}
+	@Override
+	public int compareTo(StudentClass s) {
+		// TODO Auto-generated method stub
+		//return s.marks-this.marks;
+		
+		return this.name.compareTo(s.name);
+		
+		
+	}
+	
+	
+}
